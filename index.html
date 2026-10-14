@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Among Us 会議トラッカー｜Windows版ダウンロード</title>
+<meta name="description" content="Among Usの会議中の情報整理ツール。Airshipマップ上にプレイヤーを配置し、LINE・マッド否定・ボタン消費・生死を会議ごとに記録できる、Windows用の無料の非公式ツールです。">
+<meta property="og:title" content="Among Us 会議トラッカー">
+<meta property="og:description" content="会議中の情報整理を、これひとつで。Windows用・無料・インストール後はネット接続不要。">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <img class="logo" src="icon.png" width="112" height="112" alt="Among Us 会議トラッカーのアイコン">
+  <h1>Among Us 会議トラッカー</h1>
+  <p class="lead">会議中の情報整理を、これひとつで。<br>
+    Airshipのマップ上にプレイヤーを並べて、<strong>LINE・マッド否定・ボタン消費・生死</strong>を会議ごとに記録できます。</p>
+
+  <div class="download" aria-labelledby="dl-heading">
+    <h2 id="dl-heading" class="sr-only">ダウンロード</h2>
+    <a id="dl-setup" class="btn btn-main" href="#">
+      <span class="btn-title">⬇ Windows版をダウンロード</span>
+      <span class="btn-sub" id="dl-setup-sub">インストーラー版（おすすめ）</span>
+    </a>
+    <a id="dl-portable" class="btn btn-alt" href="#">
+      <span class="btn-title">ポータブル版（インストール不要）</span>
+      <span class="btn-sub" id="dl-portable-sub"></span>
+    </a>
+    <p id="dl-status" class="status" role="status" aria-live="polite"></p>
+    <p id="dl-meta" class="meta"></p>
+    <p class="req">Windows 10 / 11（64bit）対応 ・ 無料 ・ インストール後はインターネット接続不要</p>
+  </div>
+</header>
+
+<main>
+  <section aria-labelledby="steps-h">
+    <h2 id="steps-h">使いはじめるまで（3ステップ）</h2>
+    <ol class="steps">
+      <li><span class="num">1</span><div><strong>ボタンを押してダウンロード</strong><p>上の「Windows版をダウンロード」を押します。</p></div></li>
+      <li><span class="num">2</span><div><strong>ファイルを開く</strong><p>ダウンロードしたファイル（<code>AmongUsTracker-Setup…</code>）をダブルクリックして、画面の案内どおりに進めます。ポータブル版は、好きな場所に置いてダブルクリックするだけで起動します。</p></div></li>
+      <li><span class="num">3</span><div><strong>Windowsの警告が出たら</strong><p>青い画面が出たら「<strong>詳細情報</strong>」→「<strong>実行</strong>」を押します。<a href="#faq-warn">くわしくはこちら</a></p></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="feat-h">
+    <h2 id="feat-h">できること</h2>
+    <ul class="features">
+      <li><b>🗺 マップ上に配置</b>Airshipのマップにプレイヤーをドラッグで並べられます。</li>
+      <li><b>📅 会議ごとに別の盤面</b>第1会議・第2会議…と盤面を分けて保存。過去の会議もあとから見返せます。</li>
+      <li><b>🟢 LINEの記録</b>誰と誰がつながったか、どの会議で結んだか・解除したかを一覧で管理できます。</li>
+      <li><b>🛡 マッド否定・🔘 ボタン</b>試合全体で引き継がれます。死亡・追放したプレイヤーは、ボタンが自動で消費済みになります。</li>
+      <li><b>☠ 生死の表示</b>生存・死亡（お肉）・追放を、マップ上でひと目で区別できます。</li>
+      <li><b>📝 役職・ラベル・メモ・発言</b>白確・黒寄りなどのラベルや、会議中の発言も記録できます。</li>
+      <li><b>💾 自動バックアップ</b>記録は自動でバックアップされ、安全に復元できます。ファイルへの書き出し・読み込みにも対応。</li>
+      <li><b>📺 配信向けの表示</b>OBSなどで映しやすい表示モードを備えています。</li>
+    </ul>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">よくある質問</h2>
+
+    <details id="faq-warn">
+      <summary>「WindowsによってPCが保護されました」と表示されました</summary>
+      <p>個人が作った無料ツールで、有料のコード署名をしていないため、初めて開くときに表示されることがあります。次の手順で起動できます。</p>
+      <ol><li>青い画面の「<strong>詳細情報</strong>」を押す</li><li>表示された「<strong>実行</strong>」ボタンを押す</li></ol>
+      <p>配布ページに表示されている「ハッシュ値（SHA-256）」と、ダウンロードしたファイルの値を照らし合わせて、ファイルが正しいか確認することもできます。</p>
+    </details>
+    <details>
+      <summary>ブラウザに「危険」「一般的にダウンロードされていません」と出ました</summary>
+      <p>同じ理由（署名なし・ダウンロード数が少ない）で表示されることがあります。EdgeやChromeのダウンロード一覧で、該当のファイルの「保持する」「保存」を選ぶと保存できます。</p>
+    </details>
+    <details>
+      <summary>インストーラー版とポータブル版はどちらを選べばいいですか？</summary>
+      <p>迷ったら<strong>インストーラー版</strong>がおすすめです（デスクトップとスタートメニューにショートカットができます）。ポータブル版はインストール不要で、USBメモリなどに入れて使えます。どちらも記録の保存場所は同じなので、あとから切り替えても記録はそのまま使えます。</p>
+    </details>
+    <details>
+      <summary>記録はどこに保存されますか？ 消えませんか？</summary>
+      <p>お使いのPCの中の <code>%APPDATA%\AmongUsTracker</code> に保存され、インターネットには送信されません。アプリを閉じても、PCを再起動しても残ります。自動バックアップも同じ場所の <code>backup</code> フォルダに作られます。アンインストールしても記録は消えません。</p>
+    </details>
+    <details>
+      <summary>ブラウザ版から記録を引っ越したいです</summary>
+      <p>ブラウザ版の「保存・表示」→「ファイルに保存」で書き出し、デスクトップ版の「保存・表示」→「ファイルを読み込む」で選ぶと引っ越せます。</p>
+    </details>
+    <details>
+      <summary>アンインストールするには？</summary>
+      <p>インストーラー版は、Windowsの「設定」→「アプリ」から「Among Us 会議トラッカー」を削除します。ポータブル版は、ファイルを削除するだけです。記録も消したい場合は、上の保存場所のフォルダを削除してください。</p>
+    </details>
+    <details>
+      <summary>ウイルス対策ソフトに止められました</summary>
+      <p>署名のないアプリは、誤って検知されることがあります。心配な場合は、ハッシュ値の確認や、ご利用のソフトの案内に従って判断してください。</p>
+    </details>
+    <details>
+      <summary>MacやスマートフォンでもAmong Us 会議トラッカーを使えますか？</summary>
+      <p>このダウンロードはWindows（64bit）用です。Macやスマートフォンのためのアプリはありません。</p>
+    </details>
+  </section>
+
+  <section id="hash-box" class="hashes" hidden>
+    <h2>ファイルの確認用ハッシュ値（SHA-256）</h2>
+    <dl id="hash-list"></dl>
+  </section>
+</main>
+
+<footer>
+  <p><a id="link-releases" href="#" hidden>過去のバージョン</a><a id="link-issues" href="#" hidden>不具合・ご要望（GitHub）</a></p>
+  <p class="small">これは個人が作った無料の非公式（ファンメイド）ツールです。Among Us は Innersloth の作品であり、Innersloth とは関係ありません。ゲームの内容・マップなどの権利は、それぞれの権利者に帰属します。ご利用は自己責任でお願いします。</p>
+</footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
